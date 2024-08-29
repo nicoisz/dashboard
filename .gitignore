@@ -1,0 +1,16 @@
+# Ignorar archivos de compilación
+/build
+/dist
+/.next
+# Ignorar archivos temporales de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar dependencias de Node.js
+/node_modules
+
+# Ignorar archivos de log
+*.log
