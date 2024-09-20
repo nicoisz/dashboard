@@ -6,10 +6,13 @@ import {
   KeyIcon,
   ExclamationCircleIcon,
 } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon } from "@heroicons/react/20/solid";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
+
 import { Button } from "./button";
 import { useActionState } from "react";
 import { authenticate } from "@/app/lib/actions";
+import Link from "next/link";
 
 export default function LoginForm() {
   const [errorMessage, formAction, isPending] = useActionState(
