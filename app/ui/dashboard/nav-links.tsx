@@ -14,13 +14,31 @@ import clsx from "clsx";
 const links = [
   { name: "Home", href: "/dashboard", icon: HomeIcon },
   {
-    name: "Invoices",
+    name: "Customer Analytics",
     href: "/dashboard/invoices",
     icon: DocumentDuplicateIcon,
   },
-  { name: "Customers", href: "/dashboard/customers", icon: UserGroupIcon },
-  { name: "Loyalty Program", href: "/dashboard/loyalty", icon: UserGroupIcon },
-  { name: "Reports", href: "/dashboard/reports", icon: UserGroupIcon },
+  {
+    name: "Promotions & Offers",
+    href: "/dashboard/customers",
+    icon: UserGroupIcon,
+  },
+  {
+    name: "Loyalty Program Settings",
+    href: "/dashboard/loyalty",
+    icon: UserGroupIcon,
+  },
+  {
+    name: "Communication & Messaging",
+    href: "/dashboard/reports",
+    icon: UserGroupIcon,
+  },
+  {
+    name: "Reports & Analytics",
+    href: "/dashboard/support",
+    icon: UserGroupIcon,
+  },
+  { name: "Settings", href: "/dashboard/support", icon: UserGroupIcon },
   { name: "Support", href: "/dashboard/support", icon: UserGroupIcon },
 ];
 
