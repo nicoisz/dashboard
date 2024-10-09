@@ -1,6 +1,6 @@
 import React from "react";
 import { Bell, ChevronDown, Search, Upload, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/ui/components/buttons/button";
 import {
   Card,
   CardContent,
@@ -8,30 +8,38 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
-import { DatePicker } from "@/components/ui/date-picker";
+} from "@/app/ui/components/cards/cards";
+import { Checkbox } from "@/app/ui/components/checkbox/checkbox";
+import { DatePicker } from "@/app/ui/components/datepicker/datePicker";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Progress } from "@/components/ui/progress";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+} from "@/app/ui/components/dropdown/dropDown";
+import { Input } from "@/app/ui/components/inputs/input";
+import { Label } from "@/app/ui/components/label/label";
+import { Progress } from "@/app/ui/components/progress/progress";
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/app/ui/components/radioGroupButtons/radioGroup";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Slider } from "@/components/ui/slider";
-import { Switch } from "@/components/ui/switch";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Textarea } from "@/components/ui/textarea";
+} from "@/app/ui/components/select/select";
+import { Slider } from "@/app/ui/components/slider/slider";
+import { Switch } from "@/app/ui/components/switch/switch";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/app/ui/components/tabs/tabs";
+import { Textarea } from "@/app/ui/components/textarea/textarea";
 import {
   Table,
   TableBody,
@@ -40,18 +48,18 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/app/ui/components/table/table";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@/app/ui/components/tooltip/tooltip";
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart";
+} from "@/app/ui/components/chart/chart";
 import {
   Line,
   LineChart,
@@ -129,7 +137,7 @@ export default function LoyaltyDashboard() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ChartContainer
+              {/* <ChartContainer
                 config={{
                   engagement: {
                     label: "User Engagement",
@@ -160,8 +168,8 @@ export default function LoyaltyDashboard() {
                       stroke="var(--color-purchases)"
                     />
                   </LineChart>
-                </ResponsiveContainer>
-              </ChartContainer>
+                </ResponsiveContainer> 
+              </ChartContainer> */}
             </CardContent>
           </Card>
 
