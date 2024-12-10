@@ -3,6 +3,7 @@ import {
   ClockIcon,
   UserGroupIcon,
   InboxIcon,
+  PlusCircleIcon,
 } from "@heroicons/react/24/outline";
 import { lusitana } from "@/app/ui/fonts";
 import { fetchCardData } from "@/app/lib/data";
@@ -30,6 +31,7 @@ export default async function CardWrapper() {
         title="Total Customers"
         value={numberOfCustomers}
         type="customers"
+        add={true}
       />
     </>
   );
@@ -39,10 +41,12 @@ export function Card({
   title,
   value,
   type,
+  add,
 }: {
   title: string;
   value: number | string;
   type: "invoices" | "customers" | "pending" | "collected";
+  add?: boolean;
 }) {
   const Icon = iconMap[type];
 
@@ -51,6 +55,9 @@ export function Card({
       <div className="flex p-4">
         {Icon ? <Icon className="h-5 w-5 text-gray-700" /> : null}
         <h3 className="ml-2 text-sm font-medium">{title}</h3>
+        {add ? (
+          <PlusCircleIcon className="h-5 w-5 text-gray-700 ml-auto" />
+        ) : null}
       </div>
       <p
         className={`${lusitana.className}
