@@ -59,7 +59,7 @@ export function Card({
         <h3 className="ml-2 text-sm font-medium">{title}</h3>
         {add ? (
           <div className="h-5 w-5 ml-auto">
-            <Link href="/login">
+            <Link href="/dashboard/customers/create">
               <PlusCircleIcon> </PlusCircleIcon>
             </Link>
           </div>
